@@ -23,6 +23,23 @@ void doSomething() {
 }
 ```
 
+For example:
+
+``` objective-c
+@interface MyObject
+- (id)myFactoryMethod;
+@end
+```
+
+should become:
+
+``` objective-c
+@interface MyObject
+- (instancetype)myFactoryMethod;
+@end
+```
+
+
 
 
 # Properties
